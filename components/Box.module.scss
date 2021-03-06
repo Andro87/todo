@@ -1,0 +1,51 @@
+.activitie {
+    border-bottom: 1px solid var(--Border);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    p {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.button_wrap {
+    display: flex;
+    position: relative;
+}
+.button_circle {
+    border: 1px solid var(--Border);
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        border: 1px solid var(--BrightBlue);
+    }
+}
+
+.done {
+    background: var(--CheckBackground);
+}
+.cut {
+    text-decoration: line-through;
+    color: var(--Details);
+    opacity: 0.5;
+}
+.cross_button {
+    margin-left: auto;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.show {
+    display: none;
+}

@@ -1,16 +1,56 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "josephin";
+    src: url("../public/fonts/JosefinSans-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "josephin";
+    src: url("../public/fonts/JosefinSans-Regular.ttf");
+    font-weight: 400;
+}
+
+:root {
+    --BrightBlue: hsl(220, 98%, 61%);
+    --CheckBackground: linear-gradient(
+        45deg,
+        hsl(192, 100%, 67%),
+        hsl(280, 87%, 65%)
+    );
+
+    --Box: hsl(0, 0%, 98%);
+    --Main: hsl(236, 33%, 92%);
+    --Border: hsl(233, 11%, 84%);
+    --Details: hsl(236, 9%, 61%);
+    --Text: hsl(235, 19%, 35%);
+    --Background: url("../public/images/bg-desktop-light.jpg");
+    --BackgroundMobile: url("../public/images/bg-mobile-light.jpg");
+}
+
+[data-theme="dark"] {
+    --Main: hsl(235, 21%, 11%);
+    --Box: hsl(235, 24%, 19%);
+    --Text: hsl(234, 39%, 85%);
+    --LightGrayishBlue/*(hover)*/: hsl(236, 33%, 92%);
+    --Details: hsl(234, 11%, 52%);
+    --Border: hsl(233, 14%, 35%);
+    --VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+    --Background: url("../public/images/bg-desktop-dark.jpg");
+    --BackgroundMobile: url("../public/images/bg-mobile-dark.jpg");
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: "josephin";
+    font-weight: 400;
+    color: var(--Text);
+    font-size: 1rem;
 }
