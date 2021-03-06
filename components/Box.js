@@ -10,6 +10,7 @@ export default function Box(props) {
                 <button
                     type="button"
                     name="button"
+                    title="button"
                     className={`${styles.button_circle} ${
                         done ? styles.done : null
                     }`}
@@ -40,6 +41,7 @@ export default function Box(props) {
                 <button
                     type="button"
                     name="button"
+                    title="button"
                     className={styles.cross_button}
                     onClick={() => setShow(true)}
                 >

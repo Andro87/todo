@@ -73,6 +73,7 @@ export default function Home() {
                     <button
                         type="button"
                         name="button"
+                        title="button"
                         className={styles.switch}
                         onClick={() => setDark(dark => !dark)}
                     >
@@ -120,11 +121,13 @@ export default function Home() {
                     <button
                         type="submit"
                         name="submit"
+                        title="button"
                         className={styles.button_circle}
                     ></button>
                     <input
                         type="text"
                         placeholder="Create a new todo..."
+                        title="text"
                         className={styles.input}
                         ref={todo}
                     />
